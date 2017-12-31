@@ -4,7 +4,7 @@ $(document).ready(function () {
   var randomAuthor = "";
   var randomQuote = "";
     //Generate quote-script.
-  $("#newQuote").click(function () {
+  $("#newQuote").click(function newRandomQuote () {
     var randomNumber = Math.floor(Math.random() * 11);
     switch (randomNumber) {
     case 1:
@@ -51,8 +51,8 @@ $(document).ready(function () {
       randomQuote = "Man cannot live by bread alone; he must have peanut butter.";
       randomAuthor = "- James A. Garfield";
     }
-    $("author").html(randomAuthor);
-    $("quoteText").html(randomQuote);
+    $("#author").html(randomAuthor);
+    $("#quoteText").html(randomQuote);
 
     //Tweet script with indexed quote.
     $("#tweet-quote").click(function tweetIt() {
